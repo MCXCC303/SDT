@@ -1,8 +1,9 @@
-
 import time
 import os
 
 """ prepare logdir for tensorboard and logging output"""
+
+
 def set_log(output_dir, cfg_file, log_name):
     t = time.strftime("%Y%m%d_%H%M%S", time.localtime())
     base_name = os.path.basename(cfg_file).split('.')[0]
